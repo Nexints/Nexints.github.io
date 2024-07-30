@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Nexint's Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./styles.css">
+<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<script src="jquery.js"></script>
+</script>
+<script>
+  history.scrollRestoration = "manual";
+
+  $(window).on('beforeunload', function(){
+    $(window).scrollTop(0);
+  });
+</script>
+<script type="text/javascript">
+  $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 0) {
+        $('.navbar').fadeIn();
+    } else {
+        $('.navbar').fadeOut();
+    }
+    if (y > 75) {
+        $('.textcenter').fadeIn();
+    } else {
+        $('.textcenter').fadeOut();
+    }
+    if (y > 220) {
+        $('.aboutmetitle').fadeIn();
+    } else {
+        $('.aboutmetitle').fadeOut();
+    }
+    if (y > 250) {
+        $('.aboutme').fadeIn();
+    } else {
+        $('.aboutme').fadeOut();
+    }
+    if (y > 300) {
+        $('.content').fadeIn();
+    } else {
+        $('.content').fadeOut();
+    }
+  });
+</script>
+<script>
+  $(document).ready(function() {
+    $(window).scroll(function(e) {
+      let s = $(window).scrollTop(),
+      filterVal = s === 0 ? 0 : Math.ceil((s / (window.screen.height/20)));
+      $('.blur').css({
+        'filter'         : 'blur(' + filterVal + 'px)',
+        '-webkit-filter' : 'blur(' + filterVal + 'px)',
+        '-moz-filter'    : 'blur(' + filterVal + 'px)',
+        '-o-filter'      : 'blur(' + filterVal + 'px)',
+        '-ms-filter'     : 'blur(' + filterVal + 'px)'
+      });
+    });
+  });
+</script>
+
+<div class="box">
+<div class="bg">
+  <div class="bg2">
+
+  </div>
+</div>
+<div class="background blur">
+  <div class="image">
+    <h1 class="text">NEXt Level INTer</h1>
+  </div>
+</div>
+
+<div class="description">
+  <div class="textcenter">
+    <h1>Bad at games.</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="side">
+    <button type="button" class="titlebars">
+      <h2>Portfolio</h2>
+    </button>
+    <div class="content" style="height:200px;">
+      <a href="https://www.youtube.com/@Nexint">
+        Nexint YT:
+      </a>
+      <a href="https://drive.google.com/drive/u/1/folders/1npsQEDj68GOBnddcYsYXqsJmRNNxaWYc">
+        Music Download:
+      </a>
+      <a href="https://github.com/Nexints">
+        Github:
+      </a>
+      <a href="mailto:business@nexint.org">
+        E-mail: business@nexint.org
+      </a>
+      <a href="./Portfolio/">
+        Full Portfolio:
+      </a>
+    </div>
+  </div>
+
+  <div class="main">
+    <button type="button" class="titlebars">
+      <h2>Official Mirrors</h2>
+    </button>
+    <div class="content" style="height:200px;">
+      <a href="https://www.nexint.org">
+        Nexint.org
+      </a>
+      <a href="https://www.nexint.xyz">
+        Nexint.xyz
+      </a>
+      <p class="desctext">
+        Hosted by Vercel. I am not affiliated with any other Nexint websites. Those websites may or may not be
+        legitimete, but I do not own them and do not claim any ties with them.
+      </p>
+      <a href="https://nexint.forumotion.asia/">
+        Random forum I built ⚰⚰⚰
+      </a>
+      <p class="desctext">
+        (Please don't use this. While I may have created it, I may make a much better forum later on.)
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="side">
+    <button type="button" class="titlebars">
+      <h2>Website Update Log</h2>
+    </button>
+    <div class="content" style="height:200px;">
+      <p class="desctext">
+        This build of our website is currently in development, and may be unstable at times. Please report any bugs to Nexint by using our socials.
+      </p>
+      <p class="desctext">
+        07/21/2024:
+        <br>/ Minor visual tweaks. Nothing special.
+      </p>
+      <p class="desctext">
+        07/20/2024:
+        <br>+ New footers! Inspired by Kane Ewins.
+        <br>/ Lots of bug fixing. CSS is tricky.
+      </p>
+      <p class="desctext">
+        07/18/2024:
+        <br>+ Added legal info! Placeholder stuff for now, as I am not writing a full legal document yet.
+        <br>+ Added our first blog post! Check out our blogpost on our navbar.
+        <br>/ Changed the format of new update logs. + now means a new addition, / means a comment, and - means removed stuff.
+        <br>/ Changed the code and appearance of the navbar.
+        <br>/ Changed the appearance of the dropdowns.
+        <br>- Hacky solution to fix the website is removed, replaced with a better filler div.
+      </p>
+      <p class="desctext">
+        07/16/2024: About me added, blur added, behind the scenes CSS code changed, and more! Navbar should be better on mobile.
+        <br>Moving things over to new Navbar and seperate pages.
+        <br>Changed update log slightly, updated past updates slightly.
+      </p>
+      <p class="desctext">
+        07/16/2024: Portfolio added, scrollbars changed, and more! I're currently using multiple subpages now.
+      </p>
+      <p class="desctext">
+        07/15/2024: Changed more CSS code, curved corners around the boxes, and removed a few visual scrollbars. Scrolling is still enabled.
+      </p>
+      <p class="desctext">
+        07/14/2024: Changed some CSS code, shifted things around, and added a ton of stuff. Links no longer dead!
+      </p>
+      <p class="desctext">
+        07/14/2024: Made the website. Used some CSS code in order to make some simple transitions.
+        Links are currently dead right now.
+      </p>
+    </div>
+  </div>
+  <div class="main">
+    <button type="button" class="titlebars">
+      <h2>Credits</h2>
+    </button>
+    <div class="content" style="height:200px;">
+      <p class="desctext">
+        Github Pages for hosting the site
+      </p>
+      <p class="desctext">
+        Vercel for hosting mirrors
+      </p>
+      <p class="desctext">
+        @Supadoggo for the background used in this website!
+      </p>
+      <p class="desctext">
+        @uiGalaxy and @jacob9086 for a tiny bit of code (stolen)
+      </p>
+      <p class="desctext">
+        StackOverflow for the coding answers I was looking for.
+      </p>
+      <p class="desctext">
+        W3Schools for the navbar, bits of code, etc.
+      </p>
+      <p class="desctext">
+        Kane Ewins for helping design a few of the elements.
+      </p>
+      <p class="desctext">
+        You, for viewing this site and supporting us.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="centered">
+    <button type="button" class="titlebars">
+      <h2>Underrated People</h2>
+    </button>
+    <div class="content" style="height:200px;">
+      <p class="desctext">
+        These are some YouTubers which I honestly believe are underrated. Drop a sub and watch some of their videos!
+        <br><i>Sorted by subscribers. Manually sorted.</i>
+      </p>
+      <a href="https://www.youtube.com/@TitanPlayz100">
+        TitanPlayz100 (Tetr.io YouTuber)
+      </a>
+      <a href="https://www.youtube.com/@uiGalaxy">
+        uiGalaxy (Tetr.io YouTuber)
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="filler">
+</div>
+
+<div class="filler2">
+</div>
+<div class="foot">
+  <div class="foot1">
+    <div class="footer1">
+      <div class="texthead">
+        <p>
+          Nexint.org
+        </p>
+      </div>
+      <hr class="footer">
+      <div class="textfoot">
+        <p class="footer">
+          All Rights Reserved.
+          <br>I'm a small YouTuber trying to make ​the best content possible.
+          <br><br>Inspired from Kane Ewins's website mockup.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="foot2">
+    <div class="footer2">
+      <div class="texthead">
+        <p>
+          Links:
+        </p>
+      </div>
+      <hr class="footer">
+      <div class="textfoot">
+        <a href="./../Usage_Terms/">
+          <p class="first">
+            Usage Terms:
+          </p>
+        </a>
+        <a href="./../Legal/">
+          <p class="next">
+            Legal:
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="foot3">
+    <div class="footer3">
+      <div class="texthead">
+        <p>
+          Socials:
+        </p>
+      </div>
+      <hr class="footer">
+      <div class="textfoot">
+        <a href="https://www.youtube.com/@nexint">
+          <p class="first">
+            YouTube:
+          </p>
+        </a>
+        <a href="https://x.com/nexints">
+          <p class="next">
+            Twitter:
+          </p>
+        </a>
+        <a href="https://discord.gg/k5mfWReazF">
+          <p class="next">
+            Discord:
+          </p>
+        </a>
+        <a href="mailto:business@nexint.org">
+          <p class="next">
+            E-mail:
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bottom">
+  <p>
+    Remember: Jesus Loves You.
+  </p>
+</div>
+
+<script>
+  var coll = document.getElementsByClassName("titlebars");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+</script>
+
+<div class="navbar" id="myTopnav">
+  <a href="#" class="activated navcenter">Home</a>
+  <a href="./Portfolio/" class="left">Portfolio</a>
+  <a href="./About_Me/" class="left">About Me</a>
+  <a href="./Blog/" class="left">Blog</a>
+  <a href="./Usage_Terms/" class="right">Usage Terms</a>
+  <a href="./Legal/" class="right">Legal</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  }
+</script>
+</div>
+</body>
+</html>
