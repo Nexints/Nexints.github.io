@@ -406,6 +406,13 @@
     font-weight: 500;
     text-align: center;
   }
+  .bottom a{
+    color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+  }
+  .bottom a:hover{
+    text-decoration: underline;
+  }
 
   .content {
     padding: 0 18px;
