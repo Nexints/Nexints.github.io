@@ -342,6 +342,14 @@
     position: relative;
     color: white;
   }
+  .textcentered {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
   
   /* Increase the font size of the h1 element */
   .text h1 {
