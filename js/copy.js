@@ -1,6 +1,4 @@
-function copyTheText() {
-  // Get the text field
-  var copyText = document.getElementById("myInput");
+function copyTheText(copyText) {
 
   // Select the text field
   copyText.select();
