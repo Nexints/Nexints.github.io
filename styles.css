@@ -482,13 +482,17 @@
     color: black;
   }
 
-  .content button {
+  .content .buttontext {
+    color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
+    text-align: center;
+  }
+
+  .content button {
     float: center;
     display: block;
-    color: white;
-    text-align: center;
+    color: #00296280;
     padding: 14px 20px;
     text-decoration: none;
     box-shadow: inset 0 0 0 0 #ffffff;
