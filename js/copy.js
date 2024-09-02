@@ -1,5 +1,4 @@
-function copyTheText() {
-  let Text = document.getElementById('copyable').innerHTML;
+function copyTheText(Text) {
 
   // Copy the text inside the text field
   navigator.clipboard.writeText(Text.value);
