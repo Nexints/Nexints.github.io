@@ -5,7 +5,7 @@ function copyTheText() {
   navigator.clipboard.writeText(Text.value);
   
   let tooltip = document.getElementById("copyToClipboard");
-  tooltip.innerHTML = "Copied: " + copyText.value;
+  tooltip.innerHTML = "Copied: " + Text.value;
 }
 function resetCopy() {
   let tooltip = document.getElementById("copyToClipboard");
