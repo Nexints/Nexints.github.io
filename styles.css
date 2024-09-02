@@ -483,12 +483,10 @@
   }
 
   .content button {
-    float: center;
-    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #00296200;
     color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
