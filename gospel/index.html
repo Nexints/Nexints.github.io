@@ -36,21 +36,7 @@
     }
   });
 </script>
-<script type="text/javascript">
-function copyTheText() {
-  let Text = document.getElementById('copyable').innerHTML;
 
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(Text.value);
-  
-  let tooltip = document.getElementById("copyToClipboard");
-  tooltip.innerHTML = "Copied: " + Text.value;
-}
-function resetCopy() {
-  let tooltip = document.getElementById("copyToClipboard");
-  tooltip.innerHTML = "Copy to clipboard";
-}
-</script>
 <div class="box">
 <div class="bg">
   <div class="bg2">
@@ -181,7 +167,7 @@ function resetCopy() {
           I wanted to spread the word of God more effectively with you, and want to provide an easier method of spreading the Gospel. 
         </p>
         <div class="tooltip">
-          <button onclick="copyText()" onmouseout="resetCopy()">
+          <button onclick="copyTheText()" onmouseout="resetCopy()">
             <span class="tooltiptext" id="copyToClipboard">Copy to clipboard</span>
             <p id="copyable">https://nexint.org/gospel</p>
           </button>
