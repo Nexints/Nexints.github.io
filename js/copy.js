@@ -1,9 +1,13 @@
-function copyTheText() {
-  let text = document.getElementById('copyable').innerHTML;
+function copyTheText(input) {
+  let Text = document.getElementById('copyable').innerHTML;
 
   // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
+  navigator.clipboard.writeText(Text.value);
   
-  // Alert the copied text
-  alert("Copied the text: " + copyText.value);
+  let tooltip = document.getElementById("copyToClipboard");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+function resetCopy() {
+  let tooltip = document.getElementById("copyToClipboard");
+  tooltip.innerHTML = "Copy to clipboard";
 }
