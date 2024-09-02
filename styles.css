@@ -577,7 +577,7 @@
 
   .tooltip {
     position: relative;
-    display: inline-block;
+    display: flex;
   }
   
   .tooltip .tooltiptext {
