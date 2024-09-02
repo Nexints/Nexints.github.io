@@ -1,4 +1,4 @@
-function copyTheText(Text) {
+function copyTheText() {
   let Text = document.getElementById('copyable').innerHTML;
 
   // Copy the text inside the text field
