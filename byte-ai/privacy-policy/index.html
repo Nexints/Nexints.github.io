@@ -729,112 +729,112 @@
         <div class="filler2">
         </div>
         <div class="foot">
-            <div class="foot1">
-                <div class="footer1">
-                    <div class="texthead">
-                        <p>
-                            Nexint.org
-                        </p>
-                    </div>
-                    <hr class="footer">
-                    <div class="textfoot">
-                        <p class="footer">
-                            All Rights Reserved.
-                            <br>I'm a small YouTuber trying to make ​the best content possible.
-                            <br><br>Inspired from Kane Ewins's website mockup.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="foot2">
-                <div class="footer2">
-                    <div class="texthead">
-                        <p>
-                            Links:
-                        </p>
-                    </div>
-                    <hr class="footer">
-                    <div class="textfoot">
-                        <a href="/Usage_Terms/">
-                            <p class="first">
-                                Usage Terms:
-                            </p>
-                        </a>
-                        <a href="/Legal/">
-                            <p class="next">
-                                Legal:
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="foot3">
-                <div class="footer3">
-                    <div class="texthead">
-                        <p>
-                            Socials:
-                        </p>
-                    </div>
-                    <hr class="footer">
-                    <div class="textfoot">
-                        <a href="https://www.youtube.com/@nexint">
-                            <p class="first">
-                                YouTube:
-                            </p>
-                        </a>
-                        <a href="https://x.com/nexints">
-                            <p class="next">
-                                Twitter:
-                            </p>
-                        </a>
-                        <a href="https://discord.gg/k5mfWReazF">
-                            <p class="next">
-                                Discord:
-                            </p>
-                        </a>
-                        <a href="mailto:business@nexint.org">
-                            <p class="next">
-                                E-mail:
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom">
-            <a href="https://www.bible.com/bible/114/JHN.15.9-13">
-                <p>Remember: Jesus Loves You.</p>
-            </a>
-        </div>
+  <div class="foot1">
+    <div class="footer1">
+      <div class="texthead">
+        <p>
+          Nexint.ca
+        </p>
+      </div>
+      <hr class="footer">
+      <div class="textfoot">
+        <p class="footer">
+          All Rights Reserved.
+          <br>I'm a small YouTuber trying to make ​the best content possible.
+          <br><br>Inspired from Kane Ewins's website mockup.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="foot2">
+    <div class="footer2">
+      <div class="texthead">
+        <p>
+          Links:
+        </p>
+      </div>
+      <hr class="footer">
+      <div class="textfoot">
+        <a href="/usage_terms/">
+          <p class="first">
+            Usage Terms:
+          </p>
+        </a>
+        <a href="/legal/">
+          <p class="next">
+            Legal:
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="foot3">
+    <div class="footer3">
+      <div class="texthead">
+        <p>
+          Socials:
+        </p>
+      </div>
+      <hr class="footer">
+      <div class="textfoot">
+        <a href="https://www.youtube.com/@nexint">
+          <p class="first">
+            YouTube
+          </p>
+        </a>
+        <a href="https://x.com/nexints">
+          <p class="next">
+            Twitter
+          </p>
+        </a>
+        <a href="https://nexint.ca/discord">
+          <p class="next">
+            Discord
+          </p>
+        </a>
+        <a href="mailto:business@nexint.ca">
+          <p class="next">
+            E-mail
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bottom">
+  <a href="https://the-gospel.xyz/">
+    <p>Remember: Jesus Loves You.</p>
+  </a>
+</div>
 
-        <script>
-            var coll = document.getElementsByClassName("titlebars");
-            var i;
+<script>
+  var coll = document.getElementsByClassName("titlebars");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+</script>
 
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.maxHeight) {
-                        content.style.maxHeight = null;
-                    } else {
-                        content.style.maxHeight = content.scrollHeight + "px";
-                    }
-                });
-            }
-        </script>
-
-        <div class="navbar" id="myTopnav">
-            <a href="/byte-ai/" class="navcenter">Home</a>
-            <a href="/Portfolio/" class="left">Portfolio</a>
-            <a href="/About_Me/" class="left">About Me</a>
-            <a href="/Blog/" class="left">Blog</a>
-            <a href="/Usage_Terms/" class="right">Usage Terms</a>
-            <a href="/Legal/" class="activated right">Legal</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+<div class="navbar" id="myTopnav">
+  <a href="/" class="navcenter">Home</a>
+  <a href="/portfolio/" class="left">Portfolio</a>
+  <a href="/about_me/" class="left">About Me</a>
+  <a href="/blog/" class="left">Blog</a>
+  <a href="/usage_terms/" class="right activated">Usage Terms</a>
+  <a href="/legal/" class="right">Legal</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
         <script>
             function myFunction() {
