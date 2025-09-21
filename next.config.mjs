@@ -33,6 +33,11 @@ const nextConfig = {
                 destination: 'https://discord.gg/invite/Ht7B5Urr9y',
                 permanent: true,
             },
+            {
+                source: '/moonlitsky',
+                destination: 'https://discord.gg/invite/Ht7B5Urr9y',
+                permanent: true,
+            },
         ]
     },
 }
